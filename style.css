@@ -1,9 +1,110 @@
+
 * {
   box-sizing: border-box;
 }
 body {
-  font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 83%;
+    font-weight: normal;
+    overflow-x: hidden;
+    background-color: white;
+    padding-top: 220px;
 }
+
+.topbar {
+    background-color: #083793;
+    color: white;
+    padding: 40px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: padding 0.3s ease, font-size 0.3s ease;
+}
+.topbar.shrink { 
+    padding: 20px 20px; 
+    font-size: 75%;
+}
+.topbar.shrink .logo { 
+    width: 70px;
+}
+
+.logo {
+    margin-right: 20px;
+    width: 100px;
+    height: auto;
+    transition: width 0.3s ease;
+}
+
+.title {
+    flex-grow: 1;
+    text-align: left;
+    margin: 0;
+}
+
+.buttons {
+    display: flex;
+    gap: 25px;
+    margin-right: 80px;
+}
+.button {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-size: 1.65em;
+    font-weight: normal;
+    transition: color 0.3s ease;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.button::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+.button:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.footer {
+    background-color: #083793;
+    color: white;
+    padding: 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 0.9em;
+}
+
+.footer .address, .footer .address-right {
+    text-align: left;
+    margin: 0 220px;
+}
+
+.footer .address-title {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.footer .address-details {
+    font-size: 1.4em;
+    line-height: 1.5;
+}
+
 .v165701_1964 {
   width: 100%;
   height: 1366px;
@@ -79,7 +180,7 @@ body {
   position: relative;
   top: 0px;
   left: 0px;
-  font-family: Inter;
+  font-family: 'Nunito Sans', sans-serif;;
   font-weight: Medium;
   font-size: 20px;
   opacity: 1;
@@ -150,7 +251,7 @@ body {
   position: relative;
   top: 0px;
   left: 0px;
-  font-family: Inter;
+  font-family: 'Nunito Sans', sans-serif;;
   font-weight: Medium;
   font-size: 20px;
   opacity: 1;
@@ -162,7 +263,7 @@ body {
   position: absolute;
   top: 34px;
   left: 0px;
-  font-family: Inter;
+  font-family: 'Nunito Sans', sans-serif;;
   font-weight: Medium;
   font-size: 20px;
   opacity: 1;
@@ -219,7 +320,7 @@ body {
   position: relative;
   top: 0px;
   left: 0px;
-  font-family: Inter;
+  font-family: 'Nunito Sans', sans-serif;;
   font-weight: Medium;
   font-size: 20px;
   opacity: 1;
@@ -231,7 +332,7 @@ body {
   position: absolute;
   top: 857px;
   left: 94px;
-  font-family: Inter;
+  font-family: 'Nunito Sans', sans-serif;;
   font-weight: Regular;
   font-size: 24px;
   opacity: 1;
@@ -257,7 +358,7 @@ body {
   position: absolute;
   top: 202px;
   left: 0px;
-  font-family: Inter;
+  font-family: 'Nunito Sans', sans-serif;;
   font-weight: Semi Bold;
   font-size: 40px;
   opacity: 1;
@@ -269,7 +370,7 @@ body {
   position: absolute;
   top: 270px;
   left: 0px;
-  font-family: Inter;
+  font-family: 'Nunito Sans', sans-serif;
   font-weight: Regular;
   font-size: 24px;
   opacity: 1;
@@ -281,7 +382,7 @@ body {
   position: absolute;
   top: 330px;
   left: 0px;
-  font-family: Inter;
+  font-family: 'Nunito Sans', sans-serif;;
   font-weight: Medium;
   font-size: 20px;
   opacity: 1;
@@ -303,7 +404,7 @@ body {
   position: absolute;
   top: 9px;
   left: 83px;
-  font-family: Inter;
+  font-family: 'Nunito Sans', sans-serif;;
   font-weight: Regular;
   font-size: 24px;
   opacity: 1;
